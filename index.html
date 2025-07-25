@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <title>Hello World Page</title>
-  <style>
-    body {
-	  font-family: 'Nova Square', sans-serif;
-	}
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dossier.css">
+	<!-- Fonts  -->
+	<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel
+	"stylesheet">
+	<meta charset="UTF-8">
+	<title>Dossier Generator</title>
 </head>
 <body>
-  <h1>Hello World</h1>
-  <button>Click Me</button>
+    <div class="dossier-holder">
+		<div class="dossier-container">
+			<div class="dossier-flex">
+				<div style="display: flex;flex-direction: row;">
+					<div class="dossier-head" style="">
+						<div style="right: 0;top: 0;position: absolute;width: 48px;height: 52px;">
+							<div class="dossier-head-shadow" style=""></div>
+							<div class="dossier-head-shadow" style="top: 1px;right: -55px;"></div>
+						</div>
+					</div>
+					<div class="dossier-head-end">
+						<div class="dossier-head-inner" style=""></div>
+					</div>
+				</div>
+				<div class="dossier-body">
+					<div style="left: 48.8%;position: absolute;height: 4px;width: 51.5%;border-width: 4px 0 0 0;border-color: #c6c6dd;border-style: solid;clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);"></div>
+					<div style="position: absolute;top: 0;right: 0;width: 48%;box-shadow: 6px -2px black, -12px -2px black;height: 2px;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

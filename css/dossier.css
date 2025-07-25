@@ -1,0 +1,95 @@
+.dossier-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dossier-container {
+	padding: 32px;
+	height: 340px;
+	width: 498px;
+}
+
+.dossier-head-end {
+  background: #c6c6dd;
+  clip-path: polygon(0 0, 100% 105%, 0 105%);
+  z-index: 1;
+}
+
+.dossier-head {
+  height: 48px;
+  border-width: 4px 0 0 4px;
+  border-color: #c6c6dd;
+  border-style: solid;
+  box-shadow: 1px -2px black, -2px -2px black, -2px 0px black;
+  position: relative;
+}
+
+.dossier-body {
+  background: #393942;
+  height: 100%;
+  width: 100%;
+  border-width: 0 4px 4px 4px;
+  border-color: #c6c6dd;
+  border-style: solid;
+  position: relative;
+  box-shadow: -2px 0px black, 2px 0px black, -2px 2px black, 2px 2px black;
+}
+
+/* Polygon Outline */
+.dossier-body > div:nth-child(1) {
+  left: 48.8%;
+  position: absolute;
+  height: 4px;
+  width: 51.5%;
+  border-width: 4px 0 0 0;
+  border-color: #c6c6dd;
+  border-style: solid;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
+}
+
+/* Box-Shadow Fixes */
+.dossier-body > div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48%;
+  box-shadow: 6px -2px black, -12px -2px black;
+  height: 2px;
+}
+
+.dossier-head-inner {
+  background: #393942;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 105%, 0 105%);
+  transform-origin: left;
+  height: 100%;
+  height: 100%;
+  top: 4px;
+  position: relative;
+}
+
+.dossier-head-shadow {
+  background: black;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 105%, 0 105%);
+  transform-origin: left;
+  height: 100%;
+  top: -6px;
+  position: absolute;
+  right: -49px;
+}
+
+/* Clip Path Shadow Stuff */
+.dossier-head > div:nth-child(1) {
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 52px;
+}
+
+div.dossier-head-shadow:nth-child(2) {
+  top: 1px;
+  right: -55px;
+}
+
