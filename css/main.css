@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Nova Square';
+  src: url('fonts/NovaSquare-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AWBW';
+  src: url('fonts/advance-wars-2-gba.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
 	font-family: 'Nova Square', sans-serif;
 }

@@ -5,8 +5,9 @@
 }
 
 .dossier-container {
-  height: 438px;
-  width: 642px;
+  position: relative;
+  min-height: 438px;
+  min-width: 642px;
 }
 
 .dossier-bg {
@@ -16,4 +17,26 @@
   width: 100%;
   transform-origin: center;
   position: relative;
+}
+
+.dossier-flag {
+  position: relative;
+  height: 32px;
+}
+
+.dossier-file-info {
+  position: absolute;
+  top: 24px;
+  left: 64px;
+}
+
+.dossier-file-info-flex {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  color: white;
+  font-weight: bold;
+  height: 64px;
+  text-transform: uppercase;
+  gap: 4px;
 }
