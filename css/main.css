@@ -1,17 +1,38 @@
 @font-face {
   font-family: 'Nova Square';
-  src: url('fonts/NovaSquare-Regular.ttf') format('truetype');
+  src: url('../fonts/NovaSquare-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AWBW';
-  src: url('fonts/advance-wars-2-gba.otf') format('truetype');
+  src: url('../fonts/advance-wars-2-gba.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiny5';
+  src: url('../fonts/Tiny5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Micro5';
+  src: url('../fonts/Micro5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jersey15';
+  src: url('../fonts/Jersey15-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-	font-family: 'Nova Square', sans-serif;
+	font-family: 'Jersey15', sans-serif;
 }
