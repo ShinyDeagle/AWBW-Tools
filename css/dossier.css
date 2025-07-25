@@ -1,95 +1,31 @@
-.dossier-holder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .dossier-container {
-	padding: 32px;
-	height: 340px;
-	width: 498px;
+  height: 438px;
+  width: 642px;
 }
 
-.dossier-head-end {
-  background: #c6c6dd;
-  clip-path: polygon(0 0, 100% 105%, 0 105%);
-  z-index: 1;
-}
-
-.dossier-head {
-  height: 48px;
-  border-width: 4px 0 0 4px;
-  border-color: #c6c6dd;
-  border-style: solid;
-  box-shadow: 1px -2px black, -2px -2px black, -2px 0px black;
-  position: relative;
-}
-
-.dossier-body {
-  background: #393942;
-  height: 100%;
-  width: 100%;
-  border-width: 0 4px 4px 4px;
-  border-color: #c6c6dd;
-  border-style: solid;
-  position: relative;
-  box-shadow: -2px 0px black, 2px 0px black, -2px 2px black, 2px 2px black;
-}
-
-/* Polygon Outline */
-.dossier-body > div:nth-child(1) {
-  left: 48.8%;
-  position: absolute;
-  height: 4px;
-  width: 51.5%;
-  border-width: 4px 0 0 0;
-  border-color: #c6c6dd;
-  border-style: solid;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
-}
-
-/* Box-Shadow Fixes */
-.dossier-body > div:nth-child(2) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 48%;
-  box-shadow: 6px -2px black, -12px -2px black;
-  height: 2px;
-}
-
-.dossier-head-inner {
-  background: #393942;
-  width: 100%;
-  clip-path: polygon(0 0, 100% 105%, 0 105%);
-  transform-origin: left;
-  height: 100%;
-  height: 100%;
-  top: 4px;
-  position: relative;
-}
-
-.dossier-head-shadow {
+.dossier-bg {
   background: black;
-  width: 100%;
-  clip-path: polygon(0 0, 100% 105%, 0 105%);
-  transform-origin: left;
+  clip-path: polygon(0 1%, 1% 0, 40% 0, 50% 10%, 99% 10%, 100% 11%, 100% 99%, 99% 100%, 1% 100%, 0 99%);
   height: 100%;
-  top: -6px;
+  width: 100%;
+  transform-origin: center;
+  position: relative;
+}
+
+.dossier-container > div:nth-child(1) > div:nth-child(1) {
+  transform: scaleX(0.985) scaleY(0.975);
+  background: #c6c6dd;
   position: absolute;
-  right: -49px;
 }
 
-/* Clip Path Shadow Stuff */
-.dossier-head > div:nth-child(1) {
-  right: 0;
-  top: 0;
-  width: 48px;
-  height: 52px;
+div.dossier-bg:nth-child(2) {
+  transform: scaleX(0.970) scaleY(0.950);
+  background: #393942;
+  position: absolute;
 }
 
-div.dossier-head-shadow:nth-child(2) {
-  top: 1px;
-  right: -55px;
+div.dossier-bg:nth-child(1) > div:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
