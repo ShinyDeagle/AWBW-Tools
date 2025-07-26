@@ -42,6 +42,7 @@
   width: 196px;
   font-size: 26px;
   gap: 2px;
+  line-height: 26px;
 }
 
 .dossier-file-info-flex > div:not(:first-child) {
@@ -56,6 +57,7 @@
   height: 40%;
   display: flex;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .dossier-box {
@@ -63,16 +65,15 @@
   border: 2px solid #d2d2e3;
   border-radius: 4px;
   padding: 8px;
-  width: 256px;
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 128px;
+  width: 180px;
+  height: 88px;
 }
 
 .dossier-box-text {
-  position: ;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .dossier-box-header {
